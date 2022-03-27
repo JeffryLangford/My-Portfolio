@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Helvetica', 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+body {
+    background-color: rgb(216, 198, 198);
+}
+
+header {
+    background-color: rgb(161, 54, 54);
+    padding: 20px;
+    margin: 0;
+    color: bisque;
+}
+
+header h1 {
+    font-size: 48px;
+    color: white;
+    display: inline-block;
+}
+
+header nav {
+    margin-right: 15px;
+    float: right;
+    font-size: 20px;
+    color: beige;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.hero {
+    background-image: url("../assets/images/flower-4-new_1443909i.jpg");
+    height: 400px;
+    width: 94%;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.floatleft{
+    float: left;
+    margin-left: 100px;
+}
+
+.facepic {
+    max-height: 400px;
+}
