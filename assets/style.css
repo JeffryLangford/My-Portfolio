@@ -43,7 +43,7 @@ header nav ul li a {
     font-size: 30px;
 }
 
-a:hover {
+a:hover, .resumeclick:hover {
     opacity: .7;
 }
 
@@ -127,16 +127,37 @@ p {
     border: 3px solid rgb(97, 0, 0);
 }
 
-/*.imagecorrection {
+.imagecorrection {
     max-width: 400px;
-    max-height: 400px;
-}*/
+    /* max-height: 400px; */
+}
+
+#resumeposition {
+    position: relative;
+}
+
+.resumeclick {
+    position: absolute;
+    color: whitesmoke;
+    bottom: 50%;
+    left: 9.5%;
+}
 
 .contact-me {
-    justify-content: space-between;
     position: relative;
     top: 25%;
 }
+
+.contact-me a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(97, 0, 0);
+    margin-left: auto;
+}
+
+/*.contact-me li {
+    margin: 0 100px;
+}*/
 
 .resumebutton {
     border: 3px solid rgb(161, 54, 54);
@@ -144,6 +165,10 @@ p {
     max-width: 200px;
     margin-left: 3%;
 }
+
+/*.resumeclick:hover {
+    opacity: .7;
+}*/
 
 main section div ul li a {
     text-decoration: none;
