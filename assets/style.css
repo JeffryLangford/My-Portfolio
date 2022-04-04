@@ -25,6 +25,47 @@ header h1 {
     color: whitesmoke;
 }
 
+@media (max-width: 1024px) {
+    header {
+        background-color: rgb(161, 54, 54);
+        margin: 25px 25px 0 25px;
+        height: 226px;
+        border: 1px solid rgb(97, 0, 0);
+        display: flex;
+    }
+
+    header h1 {
+        background-color: rgb(97, 0, 0);
+        border: 1px solid black;
+        width: 100%;
+        height: 78px;
+        padding: 15px;
+        font-size: 44px;
+        color: whitesmoke;
+    }
+
+    .header nav {
+        width: 100%;
+        margin-top: 35px;
+        text-align: right;
+        justify-content: flex-end;
+        padding: 100px;
+    }
+
+    .subtitle {
+        background-color: rgb(161, 54, 54);
+        border: 1px solid rgb(97, 0, 0);
+        width: 30%;
+        position: relative;
+        bottom: 100px;
+        right: 68px;
+        text-align: right;
+        height: 78px;
+        padding: 0 20px 50px 0;
+        margin-bottom: 10px;
+    }
+}
+
 header nav {
     width: 50%;
     margin-top: 35px;
@@ -41,6 +82,7 @@ header nav ul li a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 30px;
+    font-weight: bold;
 }
 
 a:hover, .resumeclick:hover {
@@ -104,7 +146,7 @@ main section {
 }
 
 .column2 {
-    width: 65%;
+    width: 70%;
     padding: 1%;
     display: flex;
     justify-content: space-between;
@@ -121,58 +163,77 @@ p {
     font-size: 20px;
 }
 
-.column2-sub {
-    max-width: 48%;
-    max-height: 48%;
+.column2-top {
+    flex-basis: calc(50 - 1em);
     border: 3px solid rgb(97, 0, 0);
+    margin: 15px;
+}
+
+.imagecorrection-top {
+    max-width: 110%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.subtitle-work {
+    position: relative;
+    bottom: 50%;
+    background-color: rgb(161, 54, 54);
+    border-top: 2px solid rgb(97, 0, 0);
+    border-right: 2px solid rgb(97, 0, 0);
+    border-bottom: 2px solid rgb(97, 0, 0);
+    width: 45%;
+    padding: 2%;
+}
+
+.subtitle-work p {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.subtitle-work span {
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+.column2-sub {
+    /* max-width: 48%; */
+    /* max-height: 48%; */
+    border: 3px solid rgb(97, 0, 0);
+    width: 610px;
+    /* height: 400px; */
+    margin: 15px;
 }
 
 .imagecorrection {
-    max-width: 400px;
-    /* max-height: 400px; */
+    /* max-width: 600px; */
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 #resumeposition {
     position: relative;
+    margin-left: 20px;
 }
 
-.resumeclick {
-    position: absolute;
-    color: whitesmoke;
-    bottom: 50%;
-    left: 9.5%;
+
+.resumebutton {
+    border: 3px solid rgb(161, 54, 54);
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .contact-me {
     position: relative;
-    top: 25%;
+    top: 60px;
 }
 
 .contact-me a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 30px;
+    font-weight: bold;
     color: rgb(97, 0, 0);
-    margin-left: auto;
-}
-
-/*.contact-me li {
-    margin: 0 100px;
-}*/
-
-.resumebutton {
-    border: 3px solid rgb(161, 54, 54);
-    max-height: 200px;
-    max-width: 200px;
-    margin-left: 3%;
-}
-
-/*.resumeclick:hover {
-    opacity: .7;
-}*/
-
-main section div ul li a {
-    text-decoration: none;
-    font-size: 22px;
-    color: rgb(97, 0, 0);
-    margin-left: auto;
+    margin-left: 10%;
 }
